@@ -1,6 +1,8 @@
+using ApiLivros.Routes;
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+app.MapGetRoutes();
 
 app.Run();
